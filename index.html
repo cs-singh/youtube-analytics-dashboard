@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Analytics Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .dashboard {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+        .card h2 {
+            color: #5c636a;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Analytics Dashboard</h1>
+    <div class="dashboard">
+        <div class="card">
+            <h2>Total Views</h2>
+            <p id="total-views">0</p>
+        </div>
+        <div class="card">
+            <h2>Subscribers Gained</h2>
+            <p id="subscribers-gained">0</p>
+        </div>
+        <div class="card">
+            <h2>Total Watch Time (hours)</h2>
+            <p id="watch-time">0</p>
+        </div>
+    </div>
+    <script>
+        // Simulating fetch of analytics data
+        const analyticsData = {
+            totalViews: 12000,
+            subscribersGained: 250,
+            watchTime: 300,
+        };
+
+        // Displaying the data
+        document.getElementById("total-views").innerText = analyticsData.totalViews;
+        document.getElementById("subscribers-gained").innerText = analyticsData.subscribersGained;
+        document.getElementById("watch-time").innerText = analyticsData.watchTime;
+    </script>
+</body>
+</html>
